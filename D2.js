@@ -5,8 +5,10 @@ let num1 = 7;
 let num2 = 5;
 if (num1 < num2) {
   console.log ("il valore massimo è:" + num2 + ", il valore minimo è invece: " + num1)
-} else {
+} else if (num1 > num2) {
   console.log (`il valore massimo è ${num1}, il valore minimo è invece ${num2}`)
+} else {
+  console.log( `I due numeri corrispondono a ${num1}`)
 }
 
 
@@ -43,6 +45,7 @@ if (x % y === 0){
 let z = 5;
 let w = 4;
 
+// metodo 1  - da correggere (non avevo letto sottrazione)
 if (z === 8) {
   console.log("il primo numero è uguale al numero dato: 8")
 } else {
@@ -55,6 +58,11 @@ if (z === 8) {
       console.log("nè il primo, nè il secondo numero, nè la loro somma sono uguali a 8")
     }
   }
+}
+
+// metodo 2
+if (z === 8 || w === 8 || z + w === 8 || z - w === 8 || w - z === 8){
+  console.log("uno dei due numeri oppure la somma o la sottrazione è uguale ad 8")
 }
 
 /* ESERCIZIO 5
@@ -80,7 +88,9 @@ if ( totalShoppingCart > 50 ){
 } else {
   console.log( `Totale: ${totalShoppingCart + 10 - (20 * totalShoppingCart / 100)}  (sconto del 20% sul prodotto già applicato)` )
 }
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
