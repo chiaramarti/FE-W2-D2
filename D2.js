@@ -13,13 +13,15 @@ if (num1 < num2) {
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-let five = 5;
-let notFive = 6;
+let five = 5;  // inizializzo la variabile FIVE, che è il valore fisso a cui miriferisco (può essere anche un const)
+let notFive = 6; // qui inizializzo la miavariabile da controllare ( a cui posso cambiare valore )
 
-if (five !== notFive){
-  console.log("not equal")
+if (five !== notFive){  // trad: 
+// SE  ( cinque  E DIVERSO  6 ) allora
+  console.log("not equal")  // mostra "not equal"
 } else {
-  console.log("wow, they are two fives!")
+// SE NO 
+  console.log("wow, they are two fives!") // mostra "..."
 }
 
 /* ESERCIZIO 3
@@ -60,11 +62,13 @@ if (z === 8) {
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-let totalShoppingCart = 50;
-if ( totalShoppingCart > 50 ){
-  console.log( `Totale: ${totalShoppingCart}` )
-} else {
-  console.log( `Totale: ${totalShoppingCart + 10}` )
+let totalShoppingCart = 50; // assegno un valore al'oggetto 
+if ( totalShoppingCart > 50 ){  //trad:
+//SE   valore di total.. > 50   allora
+  console.log( `Totale: ${totalShoppingCart}` )  // "totale: " + totalShoppingCar  // cioè mostra in console Totale: 50
+} else {  
+// SE NO    allora
+  console.log( `Totale: ${totalShoppingCart + 10}` ) 
 }
 
 /* ESERCIZIO 6
@@ -266,3 +270,5 @@ console.log(rNum)
 */
 randomNum.splice(randomNum.length - 1 , 1, 100); 
 console.log(randomNum)
+
+// funziona anchearray[array.leght -1] = 100;
