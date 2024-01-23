@@ -216,28 +216,50 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop()
+console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
+// metodo 1
+let randomNum = []
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+randomNum.push(1)
+randomNum.push(2)
+randomNum.push(3)
+randomNum.push(4)
+randomNum.push(5)
+randomNum.push(6)
+randomNum.push(7)
+randomNum.push(8)
+randomNum.push(9)
+randomNum.push(10)
+
+// metodo 2
+let rNum = []
+
+for (let a = 1; a <= 10; a++){
+  rNum.push(a);
+}
+console.log(rNum)  
+
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+randomNum.splice(randomNum.length - 1 , 1, 100); 
+console.log(randomNum)
