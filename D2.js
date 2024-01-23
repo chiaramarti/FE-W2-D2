@@ -1,27 +1,25 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
-document.write("<h2>Esercizio 1</h2><br>")
 let num1 = 7;
 let num2 = 5;
 if (num1 < num2) {
-  document.write ("il valore massimo è:" + num2 + ", il valore minimo è invece: " + num1)
+  console.log ("il valore massimo è:" + num2 + ", il valore minimo è invece: " + num1)
 } else {
-  document.write (`il valore massimo è ${num1}, il valore minimo è invece ${num2}`)
+  console.log (`il valore massimo è ${num1}, il valore minimo è invece ${num2}`)
 }
 
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-document.write("<br><h2>Esercizio 2</h2><br>")
 let five = 5;
 let notFive = 6;
 
 if (five !== notFive){
-  document.write("not equal")
+  console.log("not equal")
 } else {
-  document.write("wow, they are two fives!")
+  console.log("wow, they are two fives!")
 }
 
 /* ESERCIZIO 3
@@ -238,6 +236,7 @@ console.log(me);
 // metodo 1
 let randomNum = []
 
+//metodo 1a
 randomNum.push(1)
 randomNum.push(2)
 randomNum.push(3)
@@ -248,6 +247,10 @@ randomNum.push(7)
 randomNum.push(8)
 randomNum.push(9)
 randomNum.push(10)
+
+//metodo 1b
+/*randomNum.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)*/
+console.log(randomNum)
 
 // metodo 2
 let rNum = []
