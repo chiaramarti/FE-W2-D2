@@ -100,45 +100,33 @@ if (numb1 > numb2) {
     // Verifico chi tra n1 e n2 sia il minore
     if (numb2 > numb3) { 
     // Se tutte le concatenazioni sono verificate l'ordine è n3 +n2 +n1 altrimenti...  
-      numbers.push(numb3);
-      numbers.push(numb2);
-      numbers.push(numb1);
+      numbers.push(numb3, numb2, numb1);
       console.log(numbers)
   } else {
     // Se l'ultima non è verificata l'ordine è n2  n3 n1
-    numbers.push(numb2);
-    numbers.push(numb3);
-    numbers.push(numb1);
+    numbers.push(numb2, numb3, numb1);
     console.log(numbers)
   }
 } else {
   // Se n1 non è maggiore di n2 so già chi è il minore e il maggiore
-  numbers.push(numb2);
-  numbers.push(numb1);
-  numbers.push(numb3);
+  numbers.push(numb2, numb1, numb3);
   console.log(numbers)
 }
 } else {
 // Verifico che anche n2 sia maggiore di n3. Uso il minore per risparmiare un calcolo nel flusso
   if (numb2 < numb3) {
     // Se n2 < n3 l'ordine è n1 n2 n3
-    numbers.push(numb1);
-    numbers.push(numb2);
-    numbers.push(numb3);
+    numbers.push(numb1, numb2, numb3);
     console.log(numbers)
   } else {
     // Altrimenti verifico chi è il maggiore tra n1 e n3
     if (numb1 > numb3) {
       // Se n1 è maggiore di n3 l'ordine è n3 + n1 + n2
-      numbers.push(numb3);
-      numbers.push(numb1);
-      numbers.push(numb2);
+      numbers.push(numb3, numb1, numb2);
       console.log(numbers)
     } else {
       // Altrimenti l'ordine è n1 n3 n2
-      numbers.push(numb1);
-      numbers.push(numb3);
-      numbers.push(numb2);
+      numbers.push(numb1, numb3, numb2);
       console.log(numbers)
     } 
   }
